@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ssomai.android.scalablelayout.ScalableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:scale_base_width="400"
+    app:scale_base_height="125"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/fee_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="넷플릭스"
+        app:scale_top="30"
+        app:scale_left="30"
+        app:scale_width="200"
+        app:scale_height="30"
+        app:scale_textsize="23"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/fee_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="베이식 멤버쉽"
+        app:scale_top="60"
+        app:scale_width="200"
+        app:scale_left="30"
+        app:scale_height="35"
+        app:scale_textsize="20"/>
+
+    <TextView
+        android:id="@+id/fee_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9,500원"
+        app:scale_left="250"
+        app:scale_top="25"
+        app:scale_height="39"
+        app:scale_textsize="35"
+        app:scale_width="170"/>
+
+    <TextView
+        android:id="@+id/fee_due"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13일후 결제"
+        app:scale_left="250"
+        app:scale_top="64"
+        app:scale_height="39"
+        app:scale_textsize="15"
+        app:scale_width="170"/>
+
+
+
+</com.ssomai.android.scalablelayout.ScalableLayout>

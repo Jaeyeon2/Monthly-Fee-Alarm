@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:scale_base_width="400"
+        app:scale_base_height="712">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_width="400"
+            app:scale_height="50"/>
+
+        <TextView
+            android:id="@+id/toolbar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:scale_left="150"
+            app:scale_top="10"
+            app:scale_width="100"
+            app:scale_height="30"
+            app:scale_textsize="18"
+            android:textColor="#000000"
+            android:text="월정액 목록"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_top="50"
+            app:scale_width="400"
+            app:scale_height="0.5"
+            android:background="#cccccc"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            app:scale_top="50.5"
+            app:scale_width="400"
+            app:scale_height="661.3"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listItem="@layout/list_item"/>
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+</FrameLayout>
